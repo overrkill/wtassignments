@@ -1,0 +1,88 @@
+.container{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    text-align:bottom;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.formblock{
+    border:2px solid rgb(0, 109, 233);
+    border-radius: 15px;
+    padding: 30px;
+}
+.formblock .form {
+    display: flex;
+    flex-direction: column;
+    b
+}
+.form>div{
+    position: relative;
+}
+.name span{
+    position: absolute;
+    top:35%;
+    left:4%;
+    transition: 0.3s ease;
+    pointer-events: none;
+  
+
+}
+input{
+    height: 6vh;
+    width:40vh;
+    padding: 4px;
+    outline: none;
+    margin: 10px;
+    border: 0px;
+    border-bottom: 2px solid black;
+}
+span:after{
+    background-color: blueviolet;
+    
+    bottom:2;
+}
+input:focus + .name span,input:valid + .name span{
+    position: absolute;
+    top:0;
+    color: rgb(0, 109, 233);
+    
+}
+input:focus ,input:valid{
+    border-bottom: 2px solid  rgb(0, 109, 233);
+}
+button{
+    width: 10vw;
+    height: 6vh;
+    border: 2px solid black;
+    border-radius: 30px;
+    transition: .3s ease;
+    
+}
+button:hover{
+    background-color: rgb(0, 109, 233);
+    color: cornsilk;
+}
+.console{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    max-height:15vh;
+    padding: 20px;
+    background: rgb(0, 109, 233);
+    text-align: start;
+    color: rgb(255, 255, 255);
+    font-weight: bold;}
+    .foot{
+        font-size: 12px;
+        margin-top: 20px;
+       
+    }
+    .title{
+        font-size: large;
+        font-weight: bold;
+    }
